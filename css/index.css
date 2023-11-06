@@ -1,0 +1,835 @@
+/* whole */
+body{
+  margin: 0;
+}
+h1,h2,h3,p{
+  margin: 0;
+}
+/* ベースラインを下に揃えるため外す */
+img{
+  vertical-align: bottom;
+}
+a{
+  /* リンクにつく下線を撮る */
+  text-decoration: none;
+  /* リンクにつく青色でなく元の色に */
+  color: inherit;
+  /* カーソル通過時の半透明になるスピードのゆっくり */
+  transition: opacity 0.3s;
+}
+
+.outph{
+  display: none;
+}
+/* １ページ目 */
+.ad{
+  width: 100%;
+  height: 850px;
+  background-color: rgb(0, 2, 2);
+}
+.appear{
+  display: block;
+  height: 600px;
+  background-color: yellow;
+  width: 95%;
+  margin:0 auto;
+  position: relative;
+  top:8px;
+}
+.appear h1{
+  text-align: center;
+  padding: 240px 0;
+  font-weight: bold;
+}
+.ad .request{
+  height: 100px;
+  background-color: yellow;
+  width: 400px;
+  margin:0 auto;
+  margin-top: 75px;
+  border-radius: 5px;
+}
+.ad .request h2{
+  font-size: 20px;
+  text-align: center;
+  padding: 32px 0;
+  font-weight: bold;
+}
+
+/* ページ２ */
+.recommend{
+  width: 100%;
+  height: 850px;
+  background-color: rgb(246, 250, 192);
+}
+.recommend h1{
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.example{
+  outline: solid 3px black;
+  width: 400px;
+  margin: 40px auto ;
+  position: relative;
+  top: 30px;
+  border-radius: 6px;
+}
+.subject{
+  display: flex;
+  /* 水平方向に合わせて間を大きく開ける */
+  justify-content: space-between;
+  background-color: rgb(176, 193, 230);
+  height: 100px;
+  align-items: center;
+  line-height: 48px;
+}
+.subject img{
+  width: 64px;
+  height: 64px;
+  position: relative;
+  left: 26px;
+  top: 14px;
+}
+.subject h6{
+  margin: 0;
+  position: relative;
+  left: 28px;
+  top: 3px;
+}
+.subject h2{
+font-size: 13px;
+text-align: center;
+outline: solid 2px black;
+border-radius: 5px;
+background-color: yellow;
+height: 60px;
+position: relative;
+right: 10px;
+width: 270px;
+padding-top: 10px;
+}
+.solution{
+  background-color: aliceblue;
+}
+.solution .three{
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  top:14px;
+  left: 44px;
+  height: 90px;
+}
+.solution .two{
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  top:22px;
+  left: 44px;
+  height: 90px;
+}
+/* 3ページ目 */
+.overview{
+  width: 100%;
+  height: 850px;
+  background-color: rgb(243, 247, 247);
+  margin: 0;
+}
+.overview h1{
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.prosess{
+  height: 650px;
+  width: 80%;
+  background-color: yellow;
+  margin: 0 auto;
+  border-radius: 10px;
+  outline: solid 4px black;
+  position: relative;
+  top: 30px;
+}
+.step{
+  display: flex;
+  /* 高さを中央に揃える */
+  align-items: center;
+  /* 水平方向に合わせて間を大きく開ける */
+  justify-content: space-between;
+  margin: 14px;
+}
+.step h2{
+  font-size: 16px;
+  margin: 5px;
+  margin-top: 10px;
+  background-color: black;
+  color: rgb(252, 248, 248);
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.step h3{
+  font-size: 18;
+  margin: 5px;
+}
+.step p{
+  font-size: 14px;
+ margin: 10px;
+}
+.step img{
+  height: 80px;
+  width: 80px;
+}
+.prosess .step{
+  padding-bottom: 8px;
+  border-bottom: dashed 1px black;
+}
+#stepfour{
+  border-bottom: none;
+}
+
+/* ４ページ */
+.question{
+  width: 100%;
+  height: 900px;
+  background-color: rgb(247, 250, 210);
+  margin: 0;
+}
+.question h1{
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.answer{
+  outline: solid 2px black;
+  border-radius: 5px;
+  height: 160px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  position: relative;
+  top: 30px;
+  background-color: rgb(252, 253, 253);
+}
+.answer .container{
+  text-align: center;
+  position: relative;
+  top: 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+.answer h2{
+  font-size: 21px;
+}
+.answer h3{
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.answer p{
+  font-size: 13.5px;
+  text-align: left;
+  padding-left: 36px;
+}
+
+/* ５ページ */
+.trouble{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(248, 248, 72);
+  margin: 0;
+}
+.trouble h1{
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.research{
+  position: relative;
+  top:30px;
+  display: flex;
+  /* 横並びがいっぱいになったら折り返し */
+  flex-wrap: wrap;
+  /* liの間隔 */
+  gap: 14px;
+}
+.comment{
+  width: calc((100% - 32px) / 3);
+}
+.comment .container{
+  text-align: center;
+}
+.comment p{
+  font-weight: bold;
+  font-size: 12px;
+  outline: 0.1px rgb(253, 253, 253);
+  background-color: rgb(248, 250, 252);
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 9px;
+  padding-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+.comment img{
+height: 90px;
+width: 90px;
+}
+/* ６ページ */
+.feature{
+  width: 100%;
+  height: 900px;
+  background-color: rgb(245, 244, 244);
+  margin: 0;
+  color: rgb(3, 3, 58);
+}
+.feature .container{
+  text-align: center;
+}
+.feature h2{
+  margin: 0 auto;
+  text-align: center;
+  width: 240px;
+  border-bottom: 2px solid black;
+  position: relative;
+  top: 20px;
+  font-size: 18px;
+}
+.feature h3{
+  text-align: center;
+  margin-top: 36px;
+  font-size: 16px;
+}
+.feature p{
+  display: inline-block;
+  margin: 24px 15%  0px 15%;
+  text-align: left;
+  font-size: 12px;
+}
+.feature img{
+width: 300px;
+height: 200px;
+text-align: center;
+margin: 24px 15%  0px 15%;
+}
+
+/* ７ページ */
+.price{
+  width: 100%;
+  height: 820px;
+  background-color: rgb(0, 0, 0);
+}
+.price .form{
+  background-color:yellow;
+  height: 630px;
+}
+.price h1{
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.price .title p{
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 38px;
+  font-size: 16px;
+}
+.price h2 span{
+  background-color: yellow;
+  padding: 6px;
+}
+.price .container{
+outline: solid black 2px;
+width: 350px;
+text-align: center;
+margin: 0 auto;
+margin-top: 18px;
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+}
+.price p{
+  font-size: 14px;
+}
+.price .container p{
+  margin-bottom: 6px;
+}
+.price .special{
+  outline: solid black 2px;
+width: 350px;
+text-align: center;
+margin: 0 auto;
+margin-top: 50px;
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+}
+.price .special .top{
+  margin-bottom: 10px;
+}
+.price .special .bottom{
+  margin-top: 10px;
+}
+.price .request{
+  height: 100px;
+  width: 400px;
+  background-color: yellow;
+  margin:0 auto;
+  margin-top: 43px;
+  border-radius: 5px;
+}
+.price .request h2{
+  font-size: 20px;
+  text-align: center;
+  padding: 32px 0;
+  font-weight: bold;
+}
+
+
+
+@media(min-width:800px){
+  /* whole */
+  .outpc{
+    display: none;
+  }
+  .outph{
+    display: block;
+  }
+body{
+  margin: 0;
+}
+h1,h2,h3,p{
+  margin: 0;
+}
+/* ベースラインを下に揃えるため外す */
+img{
+  vertical-align: bottom;
+}
+a{
+  /* リンクにつく下線を撮る */
+  text-decoration: none;
+  /* リンクにつく青色でなく元の色に */
+  color: inherit;
+  /* カーソル通過時の半透明になるスピードのゆっくり */
+  transition: opacity 0.3s;
+}
+
+/* １ページ目 */
+.ad{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(0, 2, 2);
+}
+.appear{
+  display: block;
+  height: 330px;
+  background-color: yellow;
+  width: 95%;
+  margin:0 auto;
+  position: relative;
+  top:8px;
+}
+.appear h1{
+  text-align: center;
+  padding-top:130px;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-weight: bold;
+  width: 70%;
+  font-size: 160%;
+}
+.ad .request{
+  height: 44px;
+  background-color: yellow;
+  width: 400px;
+  margin:0 auto;
+  margin-top: 16px;
+  border-radius: 5px;
+}
+.ad .request h2{
+  font-size: 12px;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+}
+
+/* ページ２ */
+.recommend{
+  width: 100%;
+  height: 650px;
+  background-color: rgb(246, 250, 192);
+}
+.recommend h1{
+  font-weight: bold;
+  position: relative;
+  top: 18px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+.example{
+  outline: solid 3px black;
+  width: 380px;
+  height: 150px;
+  margin: 0px auto ;
+  margin-top: 22px;
+  border-radius: 6px;
+}
+.subject{
+  display: flex;
+  /* 水平方向に合わせて間を大きく開ける */
+  justify-content: space-between;
+  background-color: rgb(176, 193, 230);
+  height: 80px;
+  align-items: center;
+  line-height: 16px;
+}
+.subject img{
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 37px;
+  top: 2px;
+}
+.subject h6{
+  margin: 0;
+  position: relative;
+  left: 30px;
+  top: 6px;
+  font-size: 6px;
+}
+.subject h2{
+font-size: 10px;
+text-align: center;
+outline: solid 2px black;
+border-radius: 5px;
+background-color: yellow;
+height: 26px;
+width: 240px;
+padding: 8px;
+padding-top: 15px;
+}
+.solution{
+  background-color: aliceblue;
+}
+.solution .three{
+  font-size: 7px;
+  font-weight: bold;
+  position: relative;
+  top:22px;
+  left: 0px;
+  height: 70px;
+  text-align: center;
+}
+.solution .two{
+  font-size: 7px;
+  font-weight: bold;
+  margin: 0 auto; 
+  position: relative;
+  left: 0px;
+  height: 70px;
+  text-align: center;
+}
+/* 3ページ目 */
+.overview{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(243, 247, 247);
+  margin: 0;
+}
+.overview h1{
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+
+}
+.prosess{
+  background-color: rgb(243, 247, 247);
+  outline: none;
+  display: flex;
+   /* 横並びがいっぱいになったら折り返し */
+  flex-wrap: wrap;
+  width: 550px;
+  position: static;
+  margin-top: 50px;
+  height: 300px;
+}
+.prosess .step{
+  border-bottom: none;
+  width: calc(550px / 2);
+  height: 150px;
+  outline: solid black 2px;
+  margin: 0;
+  position: static;
+  background-color:yellow;
+}
+#stepone{
+  border-top-left-radius: 8px;
+}
+#steptwo{
+  border-top-right-radius: 8px;
+}
+#stepthree{
+  border-bottom-left-radius: 8px;
+}
+#stepfour{
+  border-bottom-right-radius: 8px;
+}
+.sentence{
+  margin-left: 6px;
+  width: 250px;
+}
+.step h2{
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  padding-bottom: 3px;
+  margin-left: 15px;
+}
+.step h3{
+  font-size:16px ;
+}
+.step p{
+  font-size: 9px;
+}
+.step img{
+width: 60px;
+height: 60px;
+ margin-right: 14px;
+ margin-top: 14px;
+}
+
+/* ４ページ */
+.question{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(247, 250, 210);
+  margin: 0;
+}
+.question h1{
+  font-weight: bold;
+  position: relative;
+  top: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.allanswer{
+  display: flex;
+   /* 横並びがいっぱいになったら折り返し */
+   flex-wrap: wrap;
+   width: 590px;
+   margin: 0 auto;
+   gap: 16px;
+   position: relative;
+   left: 2px;
+}
+.answer{
+  outline: solid 2px black;
+  border-radius: 5px;
+  height: 150px;
+  width: 285px;
+  margin: 0px;
+  background-color: rgb(252, 253, 253);
+}
+.answer .container{
+  text-align: center;
+  position: relative;
+  top: 10px;
+  width: 285px;
+}
+.answer h2{
+  font-size: 18px;
+}
+.answer h3{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.answer p{
+  font-size: 10px;
+  padding-left: 13px;
+}
+
+/* ５ページ */
+.trouble{
+  width: 100%;
+  height: 250px;
+  background-color: rgb(248, 248, 72);
+  margin: 0;
+}
+.trouble h1{
+  font-weight: bold;
+  position: relative;
+  top: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.research{
+  position: relative;
+  top:30px;
+  display: flex;
+  /* 横並びがいっぱいになったら折り返し */
+  flex-wrap: wrap;
+  width: 700px;
+  margin: 0 auto;
+  gap: 6px;
+}
+.comment{
+  width: calc((100% - 30px) / 6);
+}
+.comment .container{
+  text-align: center;
+}
+.comment p{
+  font-size: 1px;
+  outline: 0.1px rgb(253, 253, 253);
+  background-color: rgb(248, 250, 252);
+  width: 105px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 2px;
+  margin-bottom: 16px;
+  border-radius: 1px;
+}
+.comment img{
+height: 50px;
+width: 50px;
+}
+/* ６ページ */
+.feature{
+  width: 100%;
+  height: 750px;
+  background-color: rgb(245, 244, 244);
+  margin: 0;
+  color: rgb(3, 3, 58);
+}
+.feature .container{
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.feature h2{
+  margin: 0 auto;
+  text-align: center;
+  width: 240px;
+  border-bottom: 2px solid black;
+  position: relative;
+  top: 30px;
+  font-size: 15px;
+}
+.feature h3{
+  text-align: center;
+  margin-top: 36px;
+  font-size: 14px;
+}
+.feature p{
+  margin: 24px 15%  0px 15%;
+  text-align: center;
+  font-size: 10px;
+  padding: none;
+}
+.feature img{
+width: 240px;
+height: 150px;
+text-align: center;
+margin: 24px 15%  16px 15%;
+}
+
+/* ７ページ */
+.price{
+  width: 100%;
+  height: 580px;
+  background-color: rgb(0, 0, 0);
+}
+.price .form{
+  background-color:yellow;
+  height: 480px;
+}
+.price h1{
+  font-weight: bold;
+  position: relative;
+  top: 36px;
+  text-align: center;
+  font-size: 25px;
+}
+.price .title p{
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.plan{
+  display: flex;
+  width: 560px;
+  margin: 0 auto;
+}
+.price h2 span{
+  background-color: yellow;
+  padding: 6px;
+}
+.price .plan .container{
+outline: solid black 2px;
+text-align: center;
+width: 240px;
+margin: 0 10px;
+margin-top: 18px;
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+}
+.price p{
+  font-size: 14px;
+}
+.price .container p{
+  margin-bottom: 6px;
+}
+.price .special{
+  outline: solid black 2px;
+width: 500px;
+text-align: center;
+margin: 0 auto;
+margin-top: 30px;
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+}
+.price .special .top{
+  margin-bottom: 6px;
+}
+.price .special .bottom{
+  margin-top: 6px;
+}
+.price .request{
+  height: 50px;
+  width: 500px;
+  background-color: yellow;
+  margin:0 auto;
+  margin-top: 23px;
+  border-radius: 5px;
+}
+.price .request h2{
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 0;
+  font-weight: bold;
+}
+}
